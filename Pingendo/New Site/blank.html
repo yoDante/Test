@@ -5,7 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+  <link rel="stylesheet" href="theme.css" type="text/css"> 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $("#kc").click(function(){
+    $("#kong").load("../../log.html/2.html");
+    });   
+    });
+	 $(document).ready(function(){
+    $("#cj").click(function(){
+    $("#kong").load("../../log.html/1.html");
+    });   
+    });
+  </script>
+  </head>
   <!-- 201540704930 刘垒 -->
 <body>
   <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
@@ -20,7 +34,7 @@
           <button class="btn dropdown-toggle btn-outline-primary" data-toggle="dropdown"> 教学管理 </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">课程浏览</a>
-            <a class="dropdown-item" href="../../log.html/2.html">课程添加</a>
+            <a id="kc" class="dropdown-item" href="#">课程添加</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">教师浏览</a>
             <a class="dropdown-item" href="#">教师添加</a>
@@ -42,7 +56,7 @@
         <div class="btn-group">
           <button class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"> 成绩统计 </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="../../log.html/1.html">成绩汇总</a>
+            <a id="cj" class="dropdown-item" href="">成绩汇总</a>
             <a class="dropdown-item" href="#">成绩核算</a>
             <a class="dropdown-item" href="#">成绩分析</a>
           </div>
@@ -67,6 +81,7 @@
     </div>
   </div>
   <div class="text-white bg-secondary">
+  <div id="kong" class="py-5">
     <div class="container">
       <div class="row">
         <div class="p-4 col-md-3">
